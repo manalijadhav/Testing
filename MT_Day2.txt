@@ -1,0 +1,262 @@
+Test Method:
+------------
+1.Black Box Testing / Requirement / Specificatoin base/ Close Box
+	>Giving Input & Checking outcome without knowing internal 	Structure
+	>Done By Test Engineer
+	>It also called as Functional Testing
+
+2.White Box Testing/ Glass / Open Box Testing/ Structure Base Testing
+	>Giving Input & Checking outcome wit knowing internal 			Structure
+	>Done by Developers
+
+
+6 Months Project:
+-----------------
+1 Month  RG & A
+1 Month Design
+2 Month Coding
+1 Testing
+
+
+STLC:
+
+1.Test Planning & Controlling:
+---------------------------
+> Test Manager Creates Test Plan
+> Sccope of Testing(What to Test & What not to test)
+>Schedule
+> Roles & Reponsibilities
+>Exit Criteria/Passing Criteria
+
+COntrolling
+Monitoring Test Progress & if Deviation found with planned schedule & then responsible person will controlling activity so that project should be on track.
+
+
+
+2.Test Analysis & Test Design
+Test Analysis
+-------------
+Understanding Requirement(SRS/BRS/FRS/Design Doc/ Use Case)
+
+Test Design:
+------------
+Test Cases & Test Scenarios are Created
+
+
+3.Test Implementation & Test Execution 
+Test Implementation:
+--------------------
+>Test Scripts/ Procedure written Which is in Language of Tool
+>Test Env is Setup done by Tester with help of System Engineer
+>
+
+Test Execution:(Actual Testing)
+--------------
+>Execution of Test cases on AUT(Application Under Test) Happens.
+>Reporting any difference as Defect
+>Creating Execution Log
+>Done by Testers
+
+4.Evaluate Exit Criteria & Reporting:
+-----------------------------------
+Checking whether exit criteria is meeting or not & Reporting to Manager
+Test Summary Report
+
+5.Test Clouser:
+---------------
+1.Done After Software get Release/ Cancelled
+2.Store  & Share Learnings/Experince
+3.Store & Share Documents/Test Deliverables/Test Artifacts.
+ 
+
+
+Defect:
+-------
+Difference between Expected & Actual Result.
+
+
+Error/Mistake			> An Incorrect Human Action during
+				Development
+Defect/Bug/Incident/fault	>During Testing any difference
+Failure				>At Live Enviranment/Visible to 
+				Client/Customer
+------------------------------------------------------------
+
+Types of Defect
+---------------
+1.Functional Defect :
+	1.Wrong 
+	2.Missing 
+	3.Extra
+	
+2.Non Functional Defect:
+------------------------------------------------------------------
+7 Principles of Testing
+------------------------
+1.Testing shows Presence of Defect
+2.Exhaustive Testing is not possible
+3.Early Testing
+4.Defect Clusturing
+5.Pesticede Paradox
+	Test Case Need to be updated at regular interval to maitain its defect finding capability.
+
+6.Testing is COntext dependant:
+	
+7.Absence of Error fallacy
+Testing application which is not according to customer need is just 
+waste of time & Resources
+
+
+
+SDLC Models:
+------------
+1.Sequential Model
+	1.Waterfall/ Linear Model
+		Adv: 1.Good for Small Project
+		     2.Less Costier		
+		Disadv:1.Can not roll back
+		       2.Not Good for Complex Project due to high chance 				of defect multiplication
+			3.Requirement Addition and Modification not 			allowed
+	2.V Model
+2.Iterative/ Incremental Model/Multi Waterfall
+	1.Requirement is splited in multiple iteration & delivered
+	Adv:1.Getting working software in short period
+	    2.Requirement addition/modificaion to next iteration allowed
+	    3.Good for Complex and Big Project	
+
+	Dis:1.Take Time & resources
+
+
+Agile
+	1.Scrum
+	2.Extreame Programming
+	
+	Product Backlog: Requirement for Complete Product
+	Sprint Backlog : Requirement for Single Iteration/Sprint
+	Whole Team Approach : A Group of Dev ,Tester & Business 
+				Category People 
+				
+	Duration : 1-4 weeks
+	Daily standup Meeting:
+	Daily 15 min Meeting for avoiding communication Gap.
+	3 Questions are asked
+		1.What is done Yesterday ?
+		2.Any Bottlneck ?
+		3.What is plan for Today ? 
+
+	Face to Face Communication : It is more preferred to avaid 
+	communication Gap
+		
+	Adv:
+	1.Quality is not responsibility of indivisual Person
+	2.Getting very good quality product since customer is 
+	acting as validator
+	3.Requirement modification in same iteration is allowed
+
+	Dis:
+	1.More Time Consuming & Resource Consuming 
+	2.Not Good for Simple Project	
+
+
+Verification/ Review
+
+Verification Techniques
+------------------------------
+1.Informal Review
+		> Following no Rules/Protocol
+		>No Planning
+		>No Documentation
+		>Auther is Also not involve 
+2.Walkthrough
+	>Led by Author
+	>Can be informal or formal
+	>Feedback,finding defects, learning & Gaining
+	>Done Between Colleagues
+3.Technical Review
+	>Led By Trained Moderator/Technical Expert
+	>Can be formal or Informal
+	>Discussion about Technical Alternative, Content , finding defect
+	
+4.Inspection
+	>Led by Trained Moderator/Expert
+	>It is Formal
+	>FInding Defect & Make decision about is Phase is completed & 
+	can we move to next phase
+	>Checklist can be used for increasing defect finding capability
+
+
+Formal Review Roles
+-----------------------
+Manager
+	Decides Scope, Roles & Responsibilities/ Entry & Exit Criteria
+	Schedule etc.
+	
+Moderator : Co-ordinator,Communicating time,venue ,agenda of Meeting
+		
+Author : Whoes document under inspection
+Reader : Who reads documents
+Recorder / Scribe : Who maintain mom(minutes of meeting)
+Reviewer / Inspector : Domain Expert
+
+------------------------------------------------------------------------
+Formal Review Process:
+
+1.Planning
+	Decides Scope, Roles & Responsibilities/ Entry & Exit Criteria 
+	Schedule etc.
+	Done by Manager
+	
+2.Kick-off(optional)
+	Start initial Meeting for explaining doc & process
+	
+3.Indivisual Preparation
+	Finding defects
+4.Review Meeting
+	Discussion & Logging Defect in Defect reporting Tool
+5.Rework:
+	Fixing Defect
+
+6.Follow up:
+	Checking defect has been addressed
+	Gathering metrix(How many defect found ,How many are fixed or Pending (a measurement unit/ Data))
+
+Static Analysis:
+----------------
+Static Testing done by Tool called as Static Analysis
+
+Static Analyzer
+
+
+
+------------------------------------------------------------------------
+
+Validation Techniques/Levels of Testing
+----------------------------------------
+1.Unit Testing/Component Testing/Module Testing/Programme Testing
+	>Executing small piece of code that is able to provide some 
+	Output will be called as Unit Testing/Component/ Module /
+	Programmer Testing
+	>Done by mostly Programmer
+	>Black & White Box both Approach can be used
+	
+2.Integration Testing
+	>Checking Communication/ Intraction between two 
+	or more modules
+	>Approach
+		1.Top Down
+		2.Bottom Up
+		
+3.System Testing
+4.Acceptance Testing
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,127 @@
+Diamond2100
+
+
+What is Testing:
+------------------
+A Process in which Comparision between Expected and Actual Happens
+
+
+Why Testing:(What is Objective of Testing)
+-------------------------------------------
+To find defects & get them fixed by developers
+
+
+Negative Impact of Defects
+-------------------------
+Loss of Reputation
+Loss of Business
+Loss of Time
+LOss of Life
+
+---------------------------------------------
+
+Why Testers ?
+To do unbiassed Testing
+Testing done by any other person apart from devloper/author is 
+called as independant testing
+
+
+Levels of Indepedant testing
+
+1.Low indepedant > testing done by developer
+2.High independant > testing done by any other person/organization
+
+ 
+Anyone can do testing ?
+	Yes 
+
+Testing is easy ?
+	No > Testing everything is not possible (Complete testing is 		impossible since it takes lots time & budget)
+
+CHecked
+Unchecked
+
+2^52
+
+SDLC(Software Deveploment Life Cycle)
+
+1.Requirement Gathering & Analysis
+	BRS/FRS
+	---
+	Written in CLient Language & Hence anyone can understand
+	Contains mostly functional Requirement
+	Created by BA 
+	
+	SRS
+	---
+	Written using Technical Terms & Hence only tech. person can 	understand
+	contains functional Requirement & Non functional Requirement
+	Created by BA / Sr. BA / System Architech   
+
+	Analysis:
+	Checking Requirement is 
+				1.Correct
+				2.Complete
+				3.Testable
+				4.Achievable/feasible 
+
+2.Planning & Design
+Planning:
+	1.Project Plan is Created by Project Manager
+	2.Schedule , Roles & Responsibilities , Staffing & Training
+	3.Risk & Contingencies
+
+Design
+	1.BluePrint/Architectur of Software is Created
+	2.Types: 1.HLD/System Level
+		 2.LLD/Module Level/ Programme Level
+	3.Created By Software Designer/ UX Designer	
+
+3.Coding
+	1.Software is devloped in seleted language
+	2.Source Code is Created
+	
+4.Testing
+	1.Software Test Engineer will do testing
+	2.Test Cases/ Test Plan /Defect Report/ Execution Log etc.
+
+5.Deployment / Installation
+	1.Installing tested product at client side
+	2.Done By Deployement Team framed by Project Manager
+	3.User Guidlines / Defect Report/ Proof of Acceptance
+	 
+6.Maintainance
+	1.After Sell service ( G & W Period)
+	2.Done by Maintainance Team framed by Project Manager
+	3.Defect Report/ SRS/ BRS/ DD/ Source code Document is Created
+	4.Two Kind of Chenges happens
+		1.Corrective Changes(fixing defect) 
+		2.Adaptive Changes (Adding / Modifying requirement)
+
+
+6 Module
+---------
+Module 1 7
+Module 2 6
+Module 3 3
+Module 4 12
+Module 5 8
+Module 6 4
+
+--------------
+K1   	20
+K2   	12
+K3 & K4 08
+
+--------------------
+
+Passing 26/40   =65 %
+MCQ's
+
+
+
+
+
+
+
+
