@@ -1,12 +1,12 @@
 Test Method:
 ------------
 1.Black Box Testing / Requirement / Specificatoin base/ Close Box
-	>Giving Input & Checking outcome without knowing internal 	Structure
+	>Giving Input & Checking outcome without knowing internal Structure
 	>Done By Test Engineer
 	>It also called as Functional Testing
 
 2.White Box Testing/ Glass / Open Box Testing/ Structure Base Testing
-	>Giving Input & Checking outcome wit knowing internal 			Structure
+	>Giving Input & Checking outcome knowing internal Structure
 	>Done by Developers
 
 
@@ -247,8 +247,37 @@ Validation Techniques/Levels of Testing
 		2.Bottom Up
 		
 3.System Testing
-4.Acceptance Testing
+	>Done after combining all Modules of Software
+	>Its final level of Testing Hence testing done as 
+	scope of release
+	>Functional & Non functional both requirement is tested
+	properly
+	>Objective: Find defect as much as possible
 
+4.System integration Testing(May or May not)
+	Communication between two Systems
+	
+5.Acceptance Testing
+	>Its Decision making point to accept product or not ?
+	>Main Objective is to check is product full fills business 
+	need 	
+
+	1.User Acceptance Testing
+	Done By Business Category user
+		1.1 Alpha Testing/factory testing
+			Done within Organization
+		1.2 Beta Testing/Field Testing
+			Done in Live environment
+	2.Operational Acceptance Testing
+		>Done by System Admin to check if insatallation
+		re-installation, user Management, data migration
+		can be done or not 
+	3.Contractual & Regulatory Acceptance Testing
+		>Checking Contract critria when two parties
+		agreed on.
+		>CHecking protocols /rule & regulation given by
+		any domain controlling body or company specific
+		guideline
 
 
 

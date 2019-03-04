@@ -1,0 +1,79 @@
+Types of Testing:
+------------------
+
+1.Testing Related to change
+	1.Retesting /Confirmation Testing
+	What : Re-execution of Failed Test Case
+	When : After defect found and Fixed by developer
+	Why(Objective)  : To confirm defect has been fixed or not ?
+	
+	2.Regression Testing		
+	What : CHecking impact/effect of Change Part/portion on Unchange 	Part/portion.
+	When : After Any Change
+		1.Defect fixing
+		2.Add New Requirement
+		3.Delete/Modify requirement
+		4.Environment Change
+	
+	Why(Objective) : To Make Sure Changes do not introduce 
+			new Defect
+
+
+	Impact Analysis:
+	----------------
+	A process in which identification of number of dependant
+	Pass TC to Fail TC  happens using RTM
+	
+	Requirement Traceability Matrix/ Bi -Directional Traceability 	Matrix
+	-------------------------------------------------------------
+	>A Table having Mapping between Requirement & Test Case
+	>Very usefull to get requirment Coverage is 100 % or not
+	>Used in Regression Testing to calculate number of Test cases 
+	for regression Testing.
+	>Regression Testing is Repitative in nature hence it should be
+	done with Automation Testing.
+	Selenium,QTP(UFT)-HP,  RFT-IBM
+	
+2.Testing Related to Function 
+	>Checking Forms(with valid/ invalid data/ with optional /
+	without optional field)
+	>Checking Links(to identify broken or dead links)
+	>Checking Cookies
+		>Temp text file created by Server containing user information
+		>Type:Sessional : Active till Browser is Open
+		      Persistant : They have thier own Expiery Date
+		>How to Test Cookie:
+		1.Check content of Cookie is Encrypted or not
+		2.Check cookie is active till session or till
+		Expriry date(depending on type of Cookie)
+		3.Disabling cookie should not allow important 
+		function to work
+		4.After Login if Cookies are cleared & some links 
+		are click then Login Page should display
+
+	>>Smoke Testing(build verification Testing /Build Acceptance 
+	Testing)
+	>Decision Making point to accept build or not ?	
+	What  ?: Checking Basic/Critical functionality of Build
+	When  ?: Before Starting Actual / Detail Testing/System Testing
+	Why  ?: 1.To Check Stability/testabilty 
+		2.To avoid time wastage 
+
+	Smoke Test & Actual Test
+
+	>>Sanity Testing
+	What  ?: Checking Basic/Critical functionality of Build
+	When : After Defect fixing/ Add new requirement	 
+
+3.Testing Related to Non-Function
+	1.Performace Testing:
+		>Checking Behaviour of System w.r.t Response Time
+
+		Response Time: Time Difference between 1st bit of request
+				& last bit of Response
+		Latency	     : Time Difference between 1st bit of request
+				& 1st bit of Response	
+		Throughput   : Number of request processed per unit time
+
+--------------------------------------------------------------------------
+4.Testing Related to Structure

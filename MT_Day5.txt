@@ -1,0 +1,280 @@
+Defect Management:
+------------------
+A Process which need to be followed after Defect is Identified.
+i.e Attriutes of Defect,flow of Defect,Tool to use, Status of
+Defect.
+
+
+Severity 				Priority
+1.Impact of Defect from		1.Impact of Defect from
+functionality P.O.V		Business/CLient P.O.V.
+
+2.Decided by Quality Engineer	2.Decided by Dev/CLient/Business 
+				Category person
+3.Level				3.Level
+High				High(Immediately,Urgent)
+Defect in Basic/Critical Func.
+Show stopper 
+Abnormal Termination
+
+Medium				Medium(Before Release)
+Functional Defect but
+Less Important				 
+
+Low				Low(Can be fixed in next Version)
+Font ,Color ,Size
+
+H.S  & H.P.
+H.S  & L.p.
+L.S  & H.P.
+L.S  & L.P.
+
+----------------------------------------------------------------------
+Defect Flow:
+-------------
+
+1.Tester   > TTL   > DTL   > DEV > Tester     (Mostly in MNC)
+2.Tester   > DTL/TTL  > DEV  > Tester    (Middle Scale Company )  
+3.Tester   > DEV   > Tester  (Low Scale Company)
+
+Defect Life Cycle:
+-------------------
+
+
+
+
+Test Planning :
+---------------
+A Process of Describing Strategy/ Approach of Testing is Called 
+As Test Planning & Test Plan Document is Produced
+
+
+Why to do  Test Planning ?
+--------------------------
+1.Better Management
+2.Full utilization of Resources
+3.Risk Management
+4.to do effective Testing( Testing with Good Outcome)
+
+
+When To Start Test Planing:
+---------------------------
+1.Requirement Document should be base line
+2.Devlopment Plan should be Baseline
+
+
+
+IEEE 829  :
+
+1.Test Plan ID:
+	LMS_MTP_01 >   MTP:Master Test Plan | STP:System Test Plan
+	A COmpany Level Unique ID for Test PLan
+	
+2.References :
+	1.SRS/BRS
+	2.Devlopment Plan
+	3.Previous version of Same Product(optional)
+	4.Similar Project(optional)
+	5.IEEE Research Paper (optional)
+
+3.Introduction:
+	4-5 lines about your Project
+
+4.Feature to be Tested :(What to test ?)
+	Admin: 
+		> Add/Edit /Delete Books
+		> Add/Edit /Delete User
+		> Fine Calculate
+		> Search for Books/User
+		> Manage Profile
+	
+	Librarian:
+		> Add/Edit /Delete Students
+		> Issue  Book
+		> Return Book
+		> Fine Collection
+		> Search for Book
+		> Manage Profile
+	Student:
+		> Issue Book
+		> Return Book
+		> Pay Fine
+		> Search Book
+		> Request for Book
+
+----------------------------------------------------------------------
+5.Feature Not to be Tested:(What not to Test : Out of the Scope)
+	1.Onlie Fine Payment( Will be Devlop in Next Version )
+			
+6.Test Items:
+	Listing all Modules
+	1.Admin
+	2.Librarian
+	3.Students
+
+7.Test Environment/ Test Bed/ Test Lab:
+Hardware & Software COnfiguration needed for Testing
+	1.Software Requirement
+		JDK,OS, Browser, MS-office, Webserver, Database etc.
+
+	2.Hardware Requirement
+		1.POS Machine
+		2.Printer
+		3.RAM
+		4.Processor
+8.Suspend & Resume (Temp Stop of Testing ) Criteria:
+	1.Show Stopper Defect identified 
+	2.Test Environment not Ready
+	3.Number of Defect or Type of Defect is more 
+	Where following on testing make no sense its 
+	just waste of Testing
+	
+
+9.Entry Criteria(When To start Testing)  & Exit Criteria
+	1.Source Code/SOftware should	   1.All Test Cases should be 	be Ready			   executed with 90% Quality	
+	2.Environment should be ready	   2.No H.P Defect should be 	
+	3.Test Cases should be ready	   Pending
+					   3.Time & Budget is finished 
+
+10.Test Delivarables()
+	List Documents available During Testing
+	1.Test Plan
+	2.Test Sceanario
+	3.Test Cases
+	4.Test Scripts
+	5.Execution Log
+	6.Test Summary Reports
+	7.Defect Report
+11.Schedule:
+	Deadlines of Activity
+	Activity Name:				Days:
+	--------------				-----
+	1.Test Planning				2
+	2.Test Analysis & Test Design		7
+	3.Implementation			3
+	4.Test Execution			2
+	5.Evaluation Exit Criteria 		1
+
+12.Roles & Responsibility
+	Who is Incharge of Which Activity
+	Activity Name:			Name:	  Designation
+	--------------			-----
+	1.Test Planning			Mr.John   Test Manager
+	2.Test Analysis & Test Design	Mr.Bharat Sr. Qaulity Eng
+	3.Implementation		Mr.Modi	  Automation Eng
+	4.Test Execution		Mr.Chetan Quality Engineer
+	5.Evaluation Exit Criteria 	Mr.Malya  Sr. Quality Engineer
+
+13.Staffing & Training
+	>Hiring New Employee
+	>Providing Training on Tool & Domain 
+	for New or Old Employee
+	
+14.Test Approach(How to do Testing)
+	1.Automation or Manual Testing
+	2.Level of Testing
+	3.Type of Testing  > Smoke , Usability, Performance Testing etc.
+	4.Black or White Box Testing  > Black box Testing	
+
+15.Risk & Contingecy(Project Risk/Process Risk)
+	> Delay in Training
+	> Delay in receiving Build
+	> Manager not having Good Co-ordination Skill
+		(Plan for  Leadership Training)
+	> Less Time for Testing
+		(Plan Daily Project Status tracking Process)
+	> Supplier Issue
+	> Test Environment Not ready on Time
+
+16.Software Risk Issue:(Product Risk/Quality Risk):
+	>Delivery of Incomplete Product
+	>Delivery of faulty Product
+	>Delivery of Product having security defect
+	>Govt. policy change
+	>HArd to use & Slow to respond
+	
+17.Approval:
+	Name		Designation	Sign 	Date
+	Jay K		Project Manager 	30/02/2070 
+
+Test Strategy & Test Approach:
+------------------------------
+Test Strategy: 
+-------------
+>Its Static Document which is Common for all project
+>Its having some common practices,Guidlines, protocol
+types of Testing which is common for all project 
+
+Test Approach:
+-------------
+>Implementation of Test Strategy to specific project
+>i.e Implementation of Usability test is for COTS & custom 
+software is different.
+
+Test Estimation:
+----------------
+Its calculation of Time ,Cost & Human Resources
+
+1.Metrix Based:
+	Referring similar kind of Project  
+2.Expert Based:
+	Taking advice from Expert person
+
+Roles n Responsibilities of Tester & Test Manager
+-------------------------------------------------
+
+TP & C
+TA & TD
+Implementation & Execution
+Evaluating Exit Criteria
+-------------------------------------------------
+
+Configuration Management:
+-------------------------				
+Change Control Process/Version Control Process:-
+-------------------------------------------------
+CCB>> Change/Configuration Control
+PM
+TM
+FM
+System Architech
+Contract Manager
+Customer Representative
+---------------------------------------
+
+
+10 CR>> CR Submitted to BA >> BA Prepares Report>>CCB(6 Approve)
+
+	Sr BA	>>>  SRS/BRS
+>CMT	Sr DD >>>  Design Document
+	Sr Programmer >> Source Code
+	Sr Tester    >>  Test Plan
+			Test Cases
+			Test Script
+
+
+-----------------------------------------------	
+Benefits of CCP(Change Control Process)
+1.Avoids Random Changes
+2.Simultanously update in All Phases of SDLC
+3.Synchronization between WorkProduct and Product.
+4.Able to Trace Back to different previous version
+----------------------------------------------------
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+		
+ 
+
+
+

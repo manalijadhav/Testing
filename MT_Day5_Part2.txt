@@ -1,0 +1,51 @@
+Limitation of Manual Testing:
+-----------------------------
+1.Time Consuming
+2.Repitative in nature
+3.Human Error are introduced in any Manual Testing
+4.InConsistant
+5.Less Reliable
+6.Less Accurate
+7.Testing Like Performance Testing not possible 
+to be manually
+------------------------------------------------------
+1000 TC  >Test Script
+
+
+Which Test Cases need to be Automated ?
+
+1.Repitative & Reusable
+	1.1 Data Driven Testing:
+		Repiting same steps with different 
+		set of Data
+	1.2 Smoke /Sanity
+	1.3 Multi-platform
+		Compatibity Testing
+
+2.Testing which is Not possible Manually
+	1.Performance Testing 
+	2.Complex Security Testing 
+
+Tool Categories:
+------------------
+1.Test Management Tool (STLC): QC(ALM), TestLink, JIRA,Tarantula
+	>Manages Requirement
+	>Manages Planning
+	>Manages Test Case writing
+	>Manages Defect Reporting(Optional)
+
+2.Defect Management Tool(Defect Life Cycle)
+	QC(ALM),Bugzilla,Mantis,JIRA
+
+3.Functional Testing Tool
+	Selenium , QTP(UFT), RFT(Rational Functional Test)-IBM
+
+4.Performance Testing Tool
+	Jmeter ,LoadRunner, RPT
+5.Configuration Management Tool
+
+
+
+
+	
+
