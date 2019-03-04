@@ -43,6 +43,7 @@ Tool Categories:
 4.Performance Testing Tool
 	Jmeter ,LoadRunner, RPT
 5.Configuration Management Tool
+	Git, SVN
 
 
 
