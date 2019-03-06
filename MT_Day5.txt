@@ -1,280 +1,331 @@
-Defect Management:
+Types of Testing:
 ------------------
-A Process which need to be followed after Defect is Identified.
-i.e Attriutes of Defect,flow of Defect,Tool to use, Status of
-Defect.
+1.Testing Related to change
+	1.Retesting /Confirmation Testing
+	What : Re-execution of Failed Test Case
+	When : After defect found and Fixed by developer
+	Why(Objective)  : To confirm defect has been fixed or not ?
+	
+	2.Regression Testing		
+	What : CHecking impact/effect of Change Part/portion on Unchange 	Part/portion.
+	When : After Any Change
+		1.Defect fixing
+		2.Add New Requirement
+		3.Delete/Modify requirement
+		4.Environment Change
+	
+	Why(Objective) : To Make Sure Changes do not introduce 
+			new Defect
 
 
-Severity 				Priority
-1.Impact of Defect from		1.Impact of Defect from
-functionality P.O.V		Business/CLient P.O.V.
+	Impact Analysis:
+	----------------
+	A process in which identification of number of dependant
+	Pass TC to Fail TC  happens using RTM
+	
+	Requirement Traceability Matrix/ Bi -Directional Traceability 	Matrix
+	-------------------------------------------------------------
+	>A Table having Mapping between Requirement & Test Case
+	>Very usefull to get requirment Coverage is 100 % or not
+	>Used in Regression Testing to calculate number of Test cases 
+	for regression Testing.
+	>Regression Testing is Repitative in nature hence it should be
+	done with Automation Testing.
+	Selenium,QTP(UFT)-HP,  RFT-IBM
+	
+2.Testing Related to Function 
+	>Checking Forms(with valid/ invalid data/ with optional /
+	without optional field)
+	>Checking Links(to identify broken or dead links)
+	>Checking Cookies
+		>Temp text file created by Server containing user 
 
-2.Decided by Quality Engineer	2.Decided by Dev/CLient/Business 
-				Category person
-3.Level				3.Level
-High				High(Immediately,Urgent)
-Defect in Basic/Critical Func.
-Show stopper 
-Abnormal Termination
+information
+		>Type:Sessional : Active till Browser is Open
+		      Persistant : They have thier own Expiery Date
+		>How to Test Cookie:
+		1.Check content of Cookie is Encrypted or not
+		2.Check cookie is active till session or till
+		Expriry date(depending on type of Cookie)
+		3.Disabling cookie should not allow important 
+		function to work
+		4.After Login if Cookies are cleared & some links 
+		are click then Login Page should display
 
-Medium				Medium(Before Release)
-Functional Defect but
-Less Important				 
+	>>Smoke Testing(build verification Testing /Build Acceptance 
+	Testing)
+	>Decision Making point to accept build or not ?	
+	What  ?: Checking Basic/Critical functionality of Build
+	When  ?: Before Starting Actual / Detail Testing/System Testing
+	Why  ?: 1.To Check Stability/testabilty 
+		2.To avoid time wastage 
 
-Low				Low(Can be fixed in next Version)
-Font ,Color ,Size
+	Smoke Test & Actual Test
 
-H.S  & H.P.
-H.S  & L.p.
-L.S  & H.P.
-L.S  & L.P.
+	>>Sanity Testing
+	What  ?: Checking Basic/Critical functionality of Build
+	When : After Defect fixing/ Add new requirement	 
 
+--------------------------------------------------------------------------
+3.Testing Related to Non-Function
+1.Performace Testing:
+	>Checking Behaviour of System w.r.t Response Time
+	Response Time: Time Difference between 1st bit of request
+			& last bit of Response
+	Latency	     : Time Difference between 1st bit of request
+			& 1st bit of Response	
+	Throughput   : Number of request processed per unit time
+	
+	Load Testing : Checking Behavior of System within Customer 
+			Specified Load
+	Stress Testing:Checking Behavior of System Beyond Customer 
+			Specified Load .& Gradully increase Load 
+			till your system get crash/Break.To identify
+			Break point or Crash point.
+	Spike Testing: Done with Sudden Change(Increase/ Decrease)
+		       in Load to check Stability
+
+	Endurance/SOak Testing:
+			Load is Applied for Longer Duration i.e 
+		12 hrs,24 hrs or 45 hrs to check any memory 
+		leak
+
+
+	Performance Testing possible Manually  ?
+	NO Its not possible to do Manually even for Single user
+	Since Exact response time will not able calculated 
+	without tool.
+
+	Apache Jmeter, LoadRunner-HP, RPT-IBM
+--------------------------------------------------------------------------
+Compatibity Testing:
+	>Checking with different OS or Different OS Version
+	>Checking with different Browser or Different Browser
+	versions for Web Application where any Browser can be 
+	used 
+	
+Configuration Testing(Hardware Compatibility Test)
+	>Checking Behaviour of System by adding / Removing 
+	Hardware Resources
+	>Objective is find minimum hardware resources to provide
+	required performance of application/software
+	>Hardware Resources like RAM,Processor, LanCard etc.
+
+Usability Testing
+	>Deals with Ease of Use
+	>Ease of use should be balanced between New User &
+	Expericnce User
+	>User Surveys & Interviews done for COTS software.
+
+User Interface Testing
+	>GUI Testing
+	>Checking Color, Font,Size,Allingment,Error Massages
+	>User friendlyness 	
+	>Should be Consistance in Appearance
 ----------------------------------------------------------------------
-Defect Flow:
--------------
+4.Testing Related to Structure > Module 4 > Whilte Box Testing
+	
 
-1.Tester   > TTL   > DTL   > DEV > Tester     (Mostly in MNC)
-2.Tester   > DTL/TTL  > DEV  > Tester    (Middle Scale Company )  
-3.Tester   > DEV   > Tester  (Low Scale Company)
 
-Defect Life Cycle:
+
+Module 4:
+----------
+Test Designing Technique:
+-------------------------
+1.Specification Based Technique
+	  
+	1.Equivalence Class Partitioning
+		1	-  17|18 	60| 61  
+		>Group inputs/ outputs accroding to their behavior
+		>Select one value from each partition
+		>for above Example : 12,50,65
+	
+	2.Boundary Value Analysis
+		1	-  17|18 	60| 61  
+		>Group inputs/ outputs accroding to their behavior	 
+		>Select Valid Partition
+		>+1 & -1 to edges/Boundary of valid partition
+	
+	Total Test Data: 17,18,19   , 59,60,61  /17,18,25,60,61
+	Boundary Values: 17,18,60,61
+	Invalid Boundary Values:  17,61
+	Valid Boundary Values   : 18,60
+
+Q.In a system designed to work out the tax to be paid: 
+An employee has $4000 of salary tax free
+The next $1500 is taxed at 10% 
+The next $28000 is taxed at 22% 
+Any further amount is taxed at 40% 
+1. To the nearest $ which of these is a valid Boundary 
+Value Analysis test case? 
+A. $1500 
+B. $32001 
+C. $28000 
+D. $33501
+
+2.Which of these groups of numbers would fall into the 
+same equivalence class? 
+A. $5800; $28000; $32000 
+B. $0; $200; $4200 
+C. $5200; $5500; $28000 
+D. $28001; $32000; $35000
+
+
+A program validates a numeric field as follows: 
+values less than 10 are rejected, 
+values between 10 and 21 are accepted, 
+values greater than or equal to 22 are rejected 
+which of the following input values cover all of the equivalence partitions? 
+a. 10,11,21 
+b. 3,20,21
+c. 3,10,22 
+d. 10,21,22
+
+	3.Decision Table Testing
+	4.Use Case Testing
+-------------------------------------------------------------------------
+What is Use Case:-
+	>A Document which Describes end to end testing through 
+	intraction between User & System as a Real world P.O.V
+	>Any One Can Understand since it uses Simple language
+	No technical terms is used
+	>BA Creates it for Testing
+	>Can be used for creating Acceptance Test Cases
+
+Goal : What the user want from system
+Pre-Condition:- Set of Condition should be true before Use Case Testing
+Actors:	Entity which intracts with system.
+	Primary Actor: Who intracts & Starts transaction
+	Supporting Actor: Who Supports Primary Actor
+
+Path/Flow:
+	1.Normal /Basic :
+	2.Alternate :
+	3.Error/Exception :
+
+Post-Condition:COndition that must be true after Sucessfull
+		Execution of Use Case
+
+Use Case Template:
 -------------------
+1.Use Case ID: US_Withdraw_001
+2.Use Case Goal: To withdraw money from ATM machine
+3.Pre-Condition:
+		1.User Should have ATM card with Valid PIN
+		2.Account & ATM machine should have Balance
+		3.ATM candition should be in working condition
+4.Actors:
+	Primary: User
+	Supporting : ATM Card
+
+5.Path: Normal
+6.Steps:
+	1.U:Enter/Swap ATM Card
+	  S:Select Language Message should display 
+	2.U:Select Language & Continue
+	  S:Enter PIN Message should display
+	3.U:Enter PIN & Continue
+	  S:Menus Should display
+
+	4.U:Select Withdraw 
+	  S:Enter Amount should display
+	5.U:Enter Amount & Continue
+	  S:Select Account type should Display
+	6.U:Select Account Type
+	  S:Do you want Receipt Message should display
+	7.U:Select Yes or NO for Receipt
+	  S:1.After Processing Amount should get Dispensed
+	    2.Receipt if Yes for Receipt is Selected
+
+Post -Condition:
+	1.Entered Amount should get dispensed
+	2.Receipt if Yes for Receipt is Selected 	
 
 
 
 
-Test Planning :
----------------
-A Process of Describing Strategy/ Approach of Testing is Called 
-As Test Planning & Test Plan Document is Produced
-
-
-Why to do  Test Planning ?
---------------------------
-1.Better Management
-2.Full utilization of Resources
-3.Risk Management
-4.to do effective Testing( Testing with Good Outcome)
-
-
-When To Start Test Planing:
----------------------------
-1.Requirement Document should be base line
-2.Devlopment Plan should be Baseline
+	5.State-Transition Testing
 
 
 
-IEEE 829  :
-
-1.Test Plan ID:
-	LMS_MTP_01 >   MTP:Master Test Plan | STP:System Test Plan
-	A COmpany Level Unique ID for Test PLan
+2.Structure Based Technique
+	Coverage:	Number of Test item covered by Test SUite
+		        ------------------------------------------*100
+			Total Number of Test Item
 	
-2.References :
-	1.SRS/BRS
-	2.Devlopment Plan
-	3.Previous version of Same Product(optional)
-	4.Similar Project(optional)
-	5.IEEE Research Paper (optional)
-
-3.Introduction:
-	4-5 lines about your Project
-
-4.Feature to be Tested :(What to test ?)
-	Admin: 
-		> Add/Edit /Delete Books
-		> Add/Edit /Delete User
-		> Fine Calculate
-		> Search for Books/User
-		> Manage Profile
-	
-	Librarian:
-		> Add/Edit /Delete Students
-		> Issue  Book
-		> Return Book
-		> Fine Collection
-		> Search for Book
-		> Manage Profile
-	Student:
-		> Issue Book
-		> Return Book
-		> Pay Fine
-		> Search Book
-		> Request for Book
-
-----------------------------------------------------------------------
-5.Feature Not to be Tested:(What not to Test : Out of the Scope)
-	1.Onlie Fine Payment( Will be Devlop in Next Version )
-			
-6.Test Items:
-	Listing all Modules
-	1.Admin
-	2.Librarian
-	3.Students
-
-7.Test Environment/ Test Bed/ Test Lab:
-Hardware & Software COnfiguration needed for Testing
-	1.Software Requirement
-		JDK,OS, Browser, MS-office, Webserver, Database etc.
-
-	2.Hardware Requirement
-		1.POS Machine
-		2.Printer
-		3.RAM
-		4.Processor
-8.Suspend & Resume (Temp Stop of Testing ) Criteria:
-	1.Show Stopper Defect identified 
-	2.Test Environment not Ready
-	3.Number of Defect or Type of Defect is more 
-	Where following on testing make no sense its 
-	just waste of Testing
-	
-
-9.Entry Criteria(When To start Testing)  & Exit Criteria
-	1.Source Code/SOftware should	   1.All Test Cases should be 	be Ready			   executed with 90% Quality	
-	2.Environment should be ready	   2.No H.P Defect should be 	
-	3.Test Cases should be ready	   Pending
-					   3.Time & Budget is finished 
-
-10.Test Delivarables()
-	List Documents available During Testing
-	1.Test Plan
-	2.Test Sceanario
-	3.Test Cases
-	4.Test Scripts
-	5.Execution Log
-	6.Test Summary Reports
-	7.Defect Report
-11.Schedule:
-	Deadlines of Activity
-	Activity Name:				Days:
-	--------------				-----
-	1.Test Planning				2
-	2.Test Analysis & Test Design		7
-	3.Implementation			3
-	4.Test Execution			2
-	5.Evaluation Exit Criteria 		1
-
-12.Roles & Responsibility
-	Who is Incharge of Which Activity
-	Activity Name:			Name:	  Designation
-	--------------			-----
-	1.Test Planning			Mr.John   Test Manager
-	2.Test Analysis & Test Design	Mr.Bharat Sr. Qaulity Eng
-	3.Implementation		Mr.Modi	  Automation Eng
-	4.Test Execution		Mr.Chetan Quality Engineer
-	5.Evaluation Exit Criteria 	Mr.Malya  Sr. Quality Engineer
-
-13.Staffing & Training
-	>Hiring New Employee
-	>Providing Training on Tool & Domain 
-	for New or Old Employee
-	
-14.Test Approach(How to do Testing)
-	1.Automation or Manual Testing
-	2.Level of Testing
-	3.Type of Testing  > Smoke , Usability, Performance Testing etc.
-	4.Black or White Box Testing  > Black box Testing	
-
-15.Risk & Contingecy(Project Risk/Process Risk)
-	> Delay in Training
-	> Delay in receiving Build
-	> Manager not having Good Co-ordination Skill
-		(Plan for  Leadership Training)
-	> Less Time for Testing
-		(Plan Daily Project Status tracking Process)
-	> Supplier Issue
-	> Test Environment Not ready on Time
-
-16.Software Risk Issue:(Product Risk/Quality Risk):
-	>Delivery of Incomplete Product
-	>Delivery of faulty Product
-	>Delivery of Product having security defect
-	>Govt. policy change
-	>HArd to use & Slow to respond
-	
-17.Approval:
-	Name		Designation	Sign 	Date
-	Jay K		Project Manager 	30/02/2070 
-
-Test Strategy & Test Approach:
-------------------------------
-Test Strategy: 
--------------
->Its Static Document which is Common for all project
->Its having some common practices,Guidlines, protocol
-types of Testing which is common for all project 
-
-Test Approach:
--------------
->Implementation of Test Strategy to specific project
->i.e Implementation of Usability test is for COTS & custom 
-software is different.
-
-Test Estimation:
-----------------
-Its calculation of Time ,Cost & Human Resources
-
-1.Metrix Based:
-	Referring similar kind of Project  
-2.Expert Based:
-	Taking advice from Expert person
-
-Roles n Responsibilities of Tester & Test Manager
--------------------------------------------------
-
-TP & C
-TA & TD
-Implementation & Execution
-Evaluating Exit Criteria
--------------------------------------------------
-
-Configuration Management:
--------------------------				
-Change Control Process/Version Control Process:-
--------------------------------------------------
-CCB>> Change/Configuration Control
-PM
-TM
-FM
-System Architech
-Contract Manager
-Customer Representative
----------------------------------------
-
-
-10 CR>> CR Submitted to BA >> BA Prepares Report>>CCB(6 Approve)
-
-	Sr BA	>>>  SRS/BRS
->CMT	Sr DD >>>  Design Document
-	Sr Programmer >> Source Code
-	Sr Tester    >>  Test Plan
-			Test Cases
-			Test Script
-
-
------------------------------------------------	
-Benefits of CCP(Change Control Process)
-1.Avoids Random Changes
-2.Simultanously update in All Phases of SDLC
-3.Synchronization between WorkProduct and Product.
-4.Able to Trace Back to different previous version
-----------------------------------------------------
-
-
-
-
-
-
-
-
-	
-
-	
-
-
+	1.Statement Coverage
+		All Statement Should be Executed atleast once
 		
- 
+	2.Decision/Branch Coverage
+		
 
+Read X
+Read Y
+if(X>Y)
+	Print X
+else
+	Print Y
+endif
+SC: 2
+DC: 2
+----------------------------------------
+Read X
+Read Y
+if(X>Y)
+	if(X>50)
+		Print X
+	else
+		print "Hello"
+	endif
+endif
 
+SC: 2
+DC: 3
 
+Read X
+Read Y
+if(X>Y)
+	if(X>50)
+		Print X
+	else
+		print "Hello"
+	endif
+else
+	if(Y>60)	
+		print Y
+	endif
+endif
+SC:3
+DC:4
+
+Read X
+Read Y
+if(X>Y)
+	if(X>50)
+		Print X
+	else
+		print "Hello"
+	endif
+else
+	if(Y>60)	
+		print Y
+	else
+		Print "BYE"
+	endif
+endif
+
+3.Experince Based Technique
+	1.Error Guessing
+	>Random Tesing based on My Experince 
+	>AnyOne Can do this But Number of Defects depends updon 
+	Experince of Tester
+	>It is done in addition of Systematic Testing not 
+	Replacement
+
+	2.Exploratory Testing
+	>Its Concurrent Test Analysis ,Test Design & Test Execution
+	>Only Experince Person should be allowed
+	>It can be used in addition or in replacement of Actual Testing
+	>It  is TimeBoxed( in slot of 120 minutes)
+	>It is followed when Less/ no Documents available
+	or in case Severe time pressure 

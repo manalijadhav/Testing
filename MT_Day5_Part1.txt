@@ -103,7 +103,7 @@ IEEE 829  :
 		> Request for Book
 
 ----------------------------------------------------------------------
-5.Feature Not to be Tested:(What not to Test : Out of the Scope)
+5.Feature Not to be Test ed:(What not to Test : Out of the Scope)
 	1.Onlie Fine Payment( Will be Devlop in Next Version )
 			
 6.Test Items:

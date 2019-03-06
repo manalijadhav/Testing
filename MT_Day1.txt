@@ -3,7 +3,7 @@ Diamond2100
 
 What is Testing:
 ------------------
-A Process in which Comparision between Expected and Actual Happens
+A Process in which Comparision between Expected and Actual Happens...
 
 
 Why Testing:(What is Objective of Testing)
@@ -16,7 +16,7 @@ Negative Impact of Defects
 Loss of Reputation
 Loss of Business
 Loss of Time
-LOss of Life
+Loss of Life
 
 ---------------------------------------------
 

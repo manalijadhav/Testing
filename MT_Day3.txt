@@ -1,6 +1,5 @@
 Types of Testing:
 ------------------
-
 1.Testing Related to change
 	1.Retesting /Confirmation Testing
 	What : Re-execution of Failed Test Case
@@ -39,7 +38,7 @@ Types of Testing:
 	without optional field)
 	>Checking Links(to identify broken or dead links)
 	>Checking Cookies
-		>Temp text file created by Server containing user information
+		>Temp text file created by Server containing user 		information
 		>Type:Sessional : Active till Browser is Open
 		      Persistant : They have thier own Expiery Date
 		>How to Test Cookie:
@@ -51,7 +50,7 @@ Types of Testing:
 		4.After Login if Cookies are cleared & some links 
 		are click then Login Page should display
 
-	>>Smoke Testing(build verification Testing /Build Acceptance 
+0	>>Smoke Testing(build verification Testing /Build Acceptance 
 	Testing)
 	>Decision Making point to accept build or not ?	
 	What  ?: Checking Basic/Critical functionality of Build
@@ -65,15 +64,14 @@ Types of Testing:
 	What  ?: Checking Basic/Critical functionality of Build
 	When : After Defect fixing/ Add new requirement	 
 
-3.Testing Related to Non-Function
-	1.Performace Testing:
-		>Checking Behaviour of System w.r.t Response Time
-
-		Response Time: Time Difference between 1st bit of request
-				& last bit of Response
-		Latency	     : Time Difference between 1st bit of request
-				& 1st bit of Response	
-		Throughput   : Number of request processed per unit time
-
 --------------------------------------------------------------------------
+3.Testing Related to Non-Function
+1.Performace Testing:
+	>Checking Behaviour of System w.r.t Response Time
+	Response Time: Time Difference between 1st bit of request
+			& last bit of Response
+	Latency	     : Time Difference between 1st bit of request
+			& 1st bit of Response	
+	Throughput   : Number of request processed per unit time
+
 4.Testing Related to Structure

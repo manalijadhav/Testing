@@ -6,7 +6,7 @@ Test Method:
 	>It also called as Functional Testing
 
 2.White Box Testing/ Glass / Open Box Testing/ Structure Base Testing
-	>Giving Input & Checking outcome knowing internal Structure
+	>Giving Input & Checking outcome with knowing internal Structure
 	>Done by Developers
 
 
@@ -24,7 +24,7 @@ STLC:
 ---------------------------
 > Test Manager Creates Test Plan
 > Sccope of Testing(What to Test & What not to test)
->Schedule
+> Schedule
 > Roles & Reponsibilities
 >Exit Criteria/Passing Criteria
 
@@ -115,8 +115,8 @@ SDLC Models:
 		Adv: 1.Good for Small Project
 		     2.Less Costier		
 		Disadv:1.Can not roll back
-		       2.Not Good for Complex Project due to high chance 				of defect multiplication
-			3.Requirement Addition and Modification not 			allowed
+		       2.Not Good for Complex Project due to high chance of defect multiplication
+			3.Requirement Addition and Modification not allowed
 	2.V Model
 2.Iterative/ Incremental Model/Multi Waterfall
 	1.Requirement is splited in multiple iteration & delivered
@@ -247,37 +247,11 @@ Validation Techniques/Levels of Testing
 		2.Bottom Up
 		
 3.System Testing
-	>Done after combining all Modules of Software
-	>Its final level of Testing Hence testing done as 
-	scope of release
-	>Functional & Non functional both requirement is tested
-	properly
-	>Objective: Find defect as much as possible
+4.Acceptance Testing
 
-4.System integration Testing(May or May not)
-	Communication between two Systems
-	
-5.Acceptance Testing
-	>Its Decision making point to accept product or not ?
-	>Main Objective is to check is product full fills business 
-	need 	
 
-	1.User Acceptance Testing
-	Done By Business Category user
-		1.1 Alpha Testing/factory testing
-			Done within Organization
-		1.2 Beta Testing/Field Testing
-			Done in Live environment
-	2.Operational Acceptance Testing
-		>Done by System Admin to check if insatallation
-		re-installation, user Management, data migration
-		can be done or not 
-	3.Contractual & Regulatory Acceptance Testing
-		>Checking Contract critria when two parties
-		agreed on.
-		>CHecking protocols /rule & regulation given by
-		any domain controlling body or company specific
-		guideline
+http://127.0.0.1:8080/htmldb
+
 
 
 
