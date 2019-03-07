@@ -1,0 +1,31 @@
+ACtions Class:
+---------------
+If you want to control mouse & Keyboard events
+then use Actions Class
+
+Methods used frequently:
+------------------------
+1.moveToElement()
+2.click()
+3.KeyDown()
+4.KeyUp()
+5.dragAndDrop()
+6.doubleClick()
+7.contextClick()
+   
+Actions & Action
+-----------------
+Actions: 
+>It is Class 
+>Used to work with mouse & Keyboard events
+
+Action
+-------
+>It is Interface
+>Used for making series (composite) of actions & Later perform it.
+
+------------------------------------------------------------------
+
+
+
+
